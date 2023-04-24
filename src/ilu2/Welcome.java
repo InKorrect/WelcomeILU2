@@ -35,7 +35,7 @@ public class Welcome {
 				StringBuilder str6 = new StringBuilder(". AND HELLO, ");
 				part1=part[nomMaj[0]];
 				str6.append(part1);
-				str6.append(" !");
+				str6.append(" !"); 
 				reponse2=str6.toString();
 				reponse=reponse+reponse2.toUpperCase()
 ;			}
