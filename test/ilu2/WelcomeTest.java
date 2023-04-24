@@ -17,4 +17,8 @@ class WelcomeTest {
 		assertEquals(Welcome.welcome(""),verif);
 		assertEquals(Welcome.welcome(null),verif);
 	}
+	@Test
+	void test3() {
+		assertEquals(Welcome.welcome("JERRY"),"HELLO, JERRY !");
+	}
 }
