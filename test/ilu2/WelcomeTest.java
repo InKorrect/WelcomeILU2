@@ -7,9 +7,10 @@ import org.junit.jupiter.api.Test;
 class WelcomeTest {
 
 	@Test
-	void test() {
+	void test1() {
 		assertEquals(Welcome.welcome("bob"), "Hello, Bob");
 	}
+	
 	@Test
 	void test2() {
 		String verif="Hello, my friend";
@@ -17,8 +18,14 @@ class WelcomeTest {
 		assertEquals(Welcome.welcome(""),verif);
 		assertEquals(Welcome.welcome(null),verif);
 	}
+	
 	@Test
 	void test3() {
 		assertEquals(Welcome.welcome("JERRY"),"HELLO, JERRY !");
+	}
+	
+	@Test
+	void test4() {
+		assertEquals(Welcome.welcome("amy,bob"),"Hello, Amy, Bob");
 	}
 }
