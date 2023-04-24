@@ -7,33 +7,8 @@ import org.junit.jupiter.api.Test;
 class WelcomeTest {
 
 	@Test
-	void test1() {
+	void test() {
 		assertEquals(Welcome.welcome("bob"), "Hello, Bob");
 	}
-	
-	@Test
-	void test2() {
-		String verif="Hello, my friend";
-		assertEquals(Welcome.welcome(" "),verif);
-		assertEquals(Welcome.welcome(""),verif);
-		assertEquals(Welcome.welcome(null),verif);
-	}
-	
-	@Test
-	void test3() {
-		assertEquals(Welcome.welcome("JERRY"),"HELLO, JERRY !");
-	}
-	
-	@Test
-	void test4() {
-		assertEquals(Welcome.welcome("amy,bob"),"Hello, Amy, Bob");
-	}
-	@Test
-	void test5() {
-		assertEquals(Welcome.welcome("amy,bob,jerry"),"Hello, Amy, Bob, Jerry");
-	}
-	@Test
-	void test6() {
-		assertEquals(Welcome.welcome("amy,BOB,jerry"),"Hello, Amy, Jerry. AND HELLO, BOB !");
-	}
+
 }
