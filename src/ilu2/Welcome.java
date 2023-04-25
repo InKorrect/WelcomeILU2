@@ -14,7 +14,7 @@ public class Welcome {
 			 reponse=str2.toString();
 			 return reponse;
 		}
-		
+		input=input.replaceAll(" ", "");
 		part=input.split(",");
 		
 		int [] nomMaj=new int [part.length];
